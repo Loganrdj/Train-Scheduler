@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    margin: 0% 5% 0% 5%;
+}
+.jumbotron{
+    background-color: rgb(75, 48, 48);
+    color: white;
+}
+.border{
+    background-color: #10518f;
+    color: white;
+    display: block;
+    text-align: left;
+    padding: 3px;
+    border: 5px solid;
+    border-radius: 7px;
+}
+.trainContent{
+    padding-top: 1%;
+    padding-bottom: 2%;
+    margin: 0% 0% 0% 0%;
+    background-color: white;
+    color: black;
+}
+button{
+    border-radius: 7px;
+    background-color: #10518f;
+    color: white;
+}
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.trainInput{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 2% 0% 0% 0%;
+    background-color: white;
+    color: black;
+}
+
+.inputVal{
+    margin: 1% 2% 0% 2%;
+}
+.inputText{
+    width: 100%;
+}

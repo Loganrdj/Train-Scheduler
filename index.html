@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Train-Scheduler/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Anytime is Train Time</h1>
+        <p class="lead">Choo choo.</p>
+    </div>
+
+    <div class=border>
+        <p>Current Train Schedule</p>
+        <div class=trainSchedule>
+            <!-- Category Row -->
+            <div class="row trainContent infoDiv">
+                <div class="col-md">
+                    <b>Train Name</b>
+                </div>
+                <div class="col-md">
+                    <b>Destination</b>
+                </div>
+                <div class="col-md">
+                    <b>Frequency (min)</b>
+                </div>
+                <div class="col-md">
+                    <b>Next Arrival</b>
+                </div>
+                <div class="col-md">
+                    <b>Minutes Away</b>
+                </div>
+                <hr class="my-4"> 
+                <!-- Category Row -->
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class=border>
+        <p>Add Train</p>
+        <div class=trainInput>
+            <div class="inputVal">
+                <h5>Train Name</h5>
+                <input type="text" name="trainName" label="TrainName" class="inputText">
+            </div>
+            <div class="inputVal">
+                <h5>Destination</h5>
+                <input type="text" name="destination" label="destination" class="inputText">
+            </div>
+            <div class="inputVal">
+                <h5>First Train Time (HH:mm - military time)</h5>
+                <input type="text" name="firstTime" label="firstTime" class="inputText">
+            </div>
+            <div class="inputVal">
+                <h5>Frequency (min)</h5>
+                <input type="text" name="frequency" label="frequency" class="inputText">
+            </div>
+            <button class="inputVal" id="submitButton">Submit</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="../Train-Scheduler/javascript.js"></script>
+</body>
+</html>
